@@ -1,0 +1,8 @@
+.Window {
+  width: 50vw !important;
+  height: 50vh !important;
+}
+
+.Window > div:nth-last-of-type(1) {
+  overflow: auto;
+}
