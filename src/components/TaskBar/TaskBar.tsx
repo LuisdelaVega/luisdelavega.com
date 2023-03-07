@@ -1,21 +1,41 @@
 import { List, TaskBar as React95TaskBar } from "@react95/core";
-import { ScrollingMarquee100 } from "@react95/icons";
+import { Conflnk103, HelpBook } from "@react95/icons";
 
 import { useModalToggle } from "../../hooks/useModalToggle";
 import { Window } from "../Window";
 
 export const TaskBar: React.FC = () => {
   const {
-    isModalOpen: isTestOpen,
-    openModal: openTest,
-    closeModal: closeTest,
+    isModalOpen: isContactMeOpen,
+    openModal: openContactMe,
+    closeModal: closeContactMe,
   } = useModalToggle(false);
+  const {
+    isModalOpen: isAboutMeOpen,
+    openModal: openAboutMe,
+    closeModal: closeAboutMe,
+  } = useModalToggle(true);
 
   return (
     <>
-      {isTestOpen && (
-        <Window closeModal={closeTest} icon={ScrollingMarquee100} title="Test">
-          <h1>Test</h1>
+      {isContactMeOpen && (
+        <Window
+          closeModal={closeContactMe}
+          icon={Conflnk103}
+          title="Contact Me"
+        >
+          <h1>Contact Me</h1>
+        </Window>
+      )}
+
+      {isAboutMeOpen && (
+        <Window
+          closeModal={closeAboutMe}
+          icon={HelpBook}
+          title="About Me"
+          modalProps={{ style: { height: "30vh" } }}
+        >
+          <h1>About Me</h1>
         </Window>
       )}
 
@@ -23,10 +43,19 @@ export const TaskBar: React.FC = () => {
         list={
           <List>
             <List.Item
-              icon={<ScrollingMarquee100 variant="32x32_4" />}
-              onClick={openTest}
+              icon={<Conflnk103 variant="32x32_4" />}
+              onClick={openContactMe}
             >
-              Test
+              Contact Me
+            </List.Item>
+
+            <List.Divider />
+
+            <List.Item
+              icon={<HelpBook variant="32x32_4" />}
+              onClick={openAboutMe}
+            >
+              About Me
             </List.Item>
           </List>
         }

@@ -84,7 +84,16 @@ export const Documents: React.FC = () => {
   );
 
   return (
-    <Shortcut title="Documents" icon={Folder}>
+    <Shortcut
+      title="Documents"
+      icon={Folder}
+      modalProps={{
+        defaultPosition: {
+          x: 80,
+          y: 20,
+        },
+      }}
+    >
       <TreeFrame treeNodes={treeNodes} content={content} />
     </Shortcut>
   );

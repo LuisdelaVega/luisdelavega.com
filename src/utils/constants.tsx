@@ -6,6 +6,8 @@ import classes from "./Window.module.css";
 
 export const COMMON_MODAL_PROPS: IModalProps = {
   className: classes.Window,
+  height: "X",
+  width: "X",
   defaultPosition: {
     x: 20,
     y: 20,
@@ -15,7 +17,7 @@ export const COMMON_MODAL_PROPS: IModalProps = {
       name: "File",
       list: (
         <List>
-          <List.Item>Copy</List.Item>
+          <List.Item>Do nothing</List.Item>
         </List>
       ),
     },
@@ -23,7 +25,7 @@ export const COMMON_MODAL_PROPS: IModalProps = {
       name: "Edit",
       list: (
         <List>
-          <List.Item>Copy</List.Item>
+          <List.Item>Do nothing</List.Item>
         </List>
       ),
     },
@@ -31,7 +33,7 @@ export const COMMON_MODAL_PROPS: IModalProps = {
       name: "View",
       list: (
         <List>
-          <List.Item>Copy</List.Item>
+          <List.Item>Do nothing</List.Item>
         </List>
       ),
     },
@@ -39,7 +41,7 @@ export const COMMON_MODAL_PROPS: IModalProps = {
       name: "Help",
       list: (
         <List>
-          <List.Item>Copy</List.Item>
+          <List.Item>Do nothing</List.Item>
         </List>
       ),
     },
@@ -54,6 +56,6 @@ export const COMMON_FRAME_PROPS: Pick<
   boxShadow: "in",
   h: "100%",
   w: "100%",
-  padding: "0px 5px",
+  padding: "0px 15px",
   overflowY: "auto",
 };

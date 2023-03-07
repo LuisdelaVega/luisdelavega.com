@@ -7,6 +7,7 @@ import styled, { createGlobalStyle } from "@xstyled/styled-components";
 
 import { TaskBar } from "./components";
 import { Documents } from "./features/Documents";
+import { Resume } from "./features/Resume";
 import { ShortcutGrid } from "./utils/styledComponents";
 
 const Desktop = styled(ShortcutGrid)`
@@ -26,6 +27,7 @@ const App: React.FC = () => {
       <GlobalStyle />
       <Desktop>
         <Documents />
+        <Resume />
       </Desktop>
       <TaskBar />
     </ThemeProvider>

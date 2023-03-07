@@ -23,4 +23,9 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": "error",
     "react/prop-types": "off",
   },
+  settings: {
+    react: {
+      version: "detect",
+    },
+  },
 };

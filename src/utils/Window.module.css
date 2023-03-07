@@ -1,6 +1,6 @@
 .Window {
-  width: 50vw !important;
-  height: 50vh !important;
+  width: 50vw;
+  height: 50vh;
 }
 
 .Window > div:nth-last-of-type(1) {

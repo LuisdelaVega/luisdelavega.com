@@ -49,7 +49,7 @@ export const Shortcut: React.FC<IShortcut> = ({
           closeModal={closeModal}
           icon={Icon}
           title={title}
-          {...modalProps}
+          modalProps={modalProps}
         >
           {children}
         </Window>
