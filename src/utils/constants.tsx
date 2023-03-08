@@ -1,4 +1,3 @@
-import { List } from "@react95/core";
 import { FrameProps } from "@react95/core/@types/Frame/Frame";
 
 import { IModalProps } from "../types/interfaces";
@@ -15,35 +14,19 @@ export const COMMON_MODAL_PROPS: IModalProps = {
   menu: [
     {
       name: "File",
-      list: (
-        <List>
-          <List.Item>Do nothing</List.Item>
-        </List>
-      ),
+      list: <></>,
     },
     {
       name: "Edit",
-      list: (
-        <List>
-          <List.Item>Do nothing</List.Item>
-        </List>
-      ),
+      list: <></>,
     },
     {
       name: "View",
-      list: (
-        <List>
-          <List.Item>Do nothing</List.Item>
-        </List>
-      ),
+      list: <></>,
     },
     {
       name: "Help",
-      list: (
-        <List>
-          <List.Item>Do nothing</List.Item>
-        </List>
-      ),
+      list: <></>,
     },
   ],
 };

@@ -5,12 +5,15 @@ import {
 import "@react95/icons/icons.css";
 import styled, { createGlobalStyle } from "@xstyled/styled-components";
 
-import { TaskBar } from "./components";
 import { Documents } from "./features/Documents";
 import { Resume } from "./features/Resume";
+import { TaskBar } from "./features/TaskBar";
 import { ShortcutGrid } from "./utils/styledComponents";
 
-const Desktop = styled(ShortcutGrid)`
+/**
+ * Provides a Grid Layout for `Sortcut` components
+ */
+const DesktopGrid = styled(ShortcutGrid)`
   height: calc(100vh - 30px);
 `;
 
@@ -25,10 +28,10 @@ const App: React.FC = () => {
     <ThemeProvider>
       <React95GlobalStyle />
       <GlobalStyle />
-      <Desktop>
+      <DesktopGrid>
         <Documents />
         <Resume />
-      </Desktop>
+      </DesktopGrid>
       <TaskBar />
     </ThemeProvider>
   );

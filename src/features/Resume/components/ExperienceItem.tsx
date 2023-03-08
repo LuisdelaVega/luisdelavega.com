@@ -1,5 +1,4 @@
 import { css, styled } from "@xstyled/styled-components";
-import { FC } from "react";
 
 //#region Styled Components
 const ExperienceItemContainer = styled.div`
@@ -53,7 +52,7 @@ interface ExperienceItemProps {
   title: string;
 }
 
-export const ExperienceItem: FC<ExperienceItemProps> = ({
+export const ExperienceItem: React.FC<ExperienceItemProps> = ({
   boldSubtitles,
   descriptions,
   logoAlt,
