@@ -1,4 +1,4 @@
-import { styled } from "@xstyled/styled-components";
+import { keyframes, styled } from "@xstyled/styled-components";
 
 export const ShortcutGrid = styled.div`
   display: flex;
@@ -7,4 +7,10 @@ export const ShortcutGrid = styled.div`
   row-gap: 30px;
   column-gap: 5px;
   padding: 10px;
+`;
+
+export const BlinkAnimation = keyframes`
+50% {
+  opacity: 0;
+}
 `;

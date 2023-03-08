@@ -1,5 +1,5 @@
 import { Mailnews20 } from "@react95/icons";
-import styled from "@xstyled/styled-components";
+import { styled } from "@xstyled/styled-components";
 import { AiFillLinkedin } from "react-icons/ai";
 
 import { Shortcut } from "../../../components";
@@ -42,7 +42,7 @@ export const Resume: React.FC = () => (
     icon={Mailnews20}
     modalProps={{
       defaultPosition: {
-        x: 200,
+        x: 175,
         y: 0,
       },
       style: {

@@ -1,5 +1,4 @@
-// import { Modal } from "@react95/core";
-import styled from "@xstyled/styled-components";
+import { styled } from "@xstyled/styled-components";
 import { ReactElement } from "react";
 
 import { useModalToggle } from "../../hooks/useModalToggle";
@@ -20,7 +19,6 @@ const ShorcutIconWrapper = styled.div`
   }
 `;
 
-// TODO Add a `disabed` prop that removes the onClick and turns the icons grey or transparent
 export interface IShortcut {
   children: ReactElement;
   defaultOpen?: boolean;

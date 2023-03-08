@@ -5,7 +5,7 @@ import {
 import "@react95/icons/icons.css";
 import styled, { createGlobalStyle } from "@xstyled/styled-components";
 
-import { Documents } from "./features/Documents";
+// import { Documents } from "./features/Documents";
 import { Resume } from "./features/Resume";
 import { TaskBar } from "./features/TaskBar";
 import { ShortcutGrid } from "./utils/styledComponents";
@@ -29,7 +29,7 @@ const App: React.FC = () => {
       <React95GlobalStyle />
       <GlobalStyle />
       <DesktopGrid>
-        <Documents />
+        {/* <Documents /> */}
         <Resume />
       </DesktopGrid>
       <TaskBar />
