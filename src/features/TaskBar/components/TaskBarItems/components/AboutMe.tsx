@@ -73,7 +73,7 @@ export const Window: React.FC<IWindowProps> = ({ closeModal }) => (
   >
     <Content>
       <TitleContainer>
-        <h1>Welcome to my page! </h1>
+        <h1>Welcome to my page!</h1>
         <img
           src="./spinningearth.gif"
           alt="90's looking gif of a spinning planet earth"
@@ -87,7 +87,7 @@ export const Window: React.FC<IWindowProps> = ({ closeModal }) => (
       </p>
 
       <CaptionedImage>
-        <Tooltip text="Sadly, this picture was not taken in the 90's?">
+        <Tooltip text="Sadly, this picture was not taken in the 90's.">
           <img src="./super compressed me.jpg" alt="A photo of me." />
         </Tooltip>
         <figcaption>Hey, that&apos;s me!</figcaption>
@@ -101,6 +101,13 @@ export const Window: React.FC<IWindowProps> = ({ closeModal }) => (
         </a>
       </p>
 
+      <p>
+        I&apos;m a 90&apos;s kid and some of my favorite memories are of me and
+        my brother sitting in front of my dad&apos;s computer playing games
+        (yes, it was mostly RuneScape) and messing around in{" "}
+        <BlinkingText>THE INTERNET</BlinkingText>.
+      </p>
+
       <CaptionedImage>
         <Tooltip text="The 90's in Puerto Rico really were something different.">
           <img
@@ -110,13 +117,6 @@ export const Window: React.FC<IWindowProps> = ({ closeModal }) => (
         </Tooltip>
         <figcaption>Me (middle) circa 1997ish</figcaption>
       </CaptionedImage>
-
-      <p>
-        I&apos;m a 90&apos;s kid and some of my favorite memories are of me and
-        my brother sitting in front of my dad&apos;s computer playing games
-        (yes, it was mostly RuneScape) and messing around in{" "}
-        <BlinkingText>THE INTERNET</BlinkingText>.
-      </p>
 
       <p>
         Feel free to look around my page. You can find ways to contact me in the
